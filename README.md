@@ -1,16 +1,15 @@
-# custom-npm-server
+# custom-npm
 
 # Goal
-I'd like to have a private npm repository system for non javascript packages. This would mean two things: 
+This project is designed to make it easy for people to create their own npm style package repositories, including non javascript files (like markdown).
 
-1. A npm like rest api system
-2. An node.js command line prompt to communicate to the rest api (similar to the npm command).
+This would mean two things: 
 
-
-If the code checks out, I'd love to open source it and show you as the primary coder!
+1. A npm like rest api system that installs easily on heroku, docker, or any other quick install system
+2. A command line prompt to communicate to the rest api (similar to the npm command) (use node.js to build this tool).
 
 # Specifics
-Since I want all of npm's current functionality without connect to the real npm, I'm thinking perhaps using something like the npm module `sinopia` with some massaging to prevent attempts to connect to the real npm could be all we need. Do some research on other private npm systems, like sinopia, or even perhaps Atom's 'apm'.
+Since we need all of npm's current functionality without connecting to the real npm, we can perhaps use something like the npm module `sinopia` with some massaging to prevent attempts to connect to the real npm could be all we need. Do some research on other private npm systems, like sinopia, or even perhaps Atom's 'apm'.
 
 # Usage
 
